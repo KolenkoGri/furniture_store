@@ -1,6 +1,13 @@
 .order {
     color: #1c1c1c;
-    font-size: 20px;
+
+    &__container {
+        max-width: 494px;
+
+        @media (min-width: 1120px) {
+            max-width: 592px;
+        }
+    }
 
     &__info-list {
         display: grid;
@@ -44,9 +51,10 @@
         height: 38px;
         padding: 12px 24px;
         border-radius: 32px;
-        border: 1px;
         background-color: #780096;
         border: 1px solid #780096;
+        display: flex;
+        justify-content: center;
     }
 
     &__link {
