@@ -197,5 +197,9 @@
 
     &__order-container {
         max-width: 494px;
+
+        @media (min-width: 1120px) {
+            max-width: 592px;
+        }
     }
 }
