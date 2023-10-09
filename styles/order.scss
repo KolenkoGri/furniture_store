@@ -1,14 +1,41 @@
-.order__info {
-  color: #1c1c1c;
-  font-size: 20px;
+.order {
+    color: #1c1c1c;
+    font-size: 20px;
 
-  &_article {
-    margin-bottom: 28px;
-  }
+    &__info-list {
+        display: grid;
+        row-gap: 8px;
+        margin-bottom: 20px;
+        padding-top: 24px;
+        @media (min-width: 580px) {
+            row-gap: 12px;
+            grid-template-columns: 1fr 80px;
+            padding-top: 60px;
+        }
+    }
 
-  &_list {
-    display: flex;
-    margin-bottom: 28px;
-    
-  }
+    &__info-item {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        @media (min-width: 580px) {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    &__article {
+        display: inline-block;
+        background-color: #eeeff2;
+        padding: 4px 8px 4px 8px;
+        border-radius: 32px;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__title {
+        margin-bottom: 12px;
+    }
 }
