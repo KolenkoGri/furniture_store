@@ -14,7 +14,7 @@
     padding: 0;
 
     @media (min-width: 1120px) {
-      padding: 0 92px;
+      padding: 0;
     }
   }
 
@@ -27,44 +27,38 @@
     @media (min-width: 580px) {
       padding: 0 29px;
     }
-
     @media (min-width: 820px) {
       padding: 0 43px;
     }
-
     @media (min-width: 1120px) {
-      padding: 0;
+      padding: 0 92px;
     }
   }
 
   &__link {
     display: block;
+    padding: 8px 14px 10px 14px;
     border-radius: 32px;
     background-color: #eeeff2;
-    padding: 8px 14px 10px 14px;
     color: #969eae;
     outline: none;
     border: 1px solid transparent;
+    white-space: nowrap;
 
     &:hover,
     &:focus-visible {
-      border-color: #780096;
+      border: 1px solid #780096;
       color: #780096;
     }
 
     &:active,
     &_active {
-      color: #fff;
+      color: #ffffff;
       background-color: #780096;
+    }
 
-      &:hover,
-      &:focus-visible {
-        color: #fff;
-      }
-
-      &_active {
-        pointer-events: none;
-      }
+    &_active {
+      pointer-events: none;
     }
   }
 }
